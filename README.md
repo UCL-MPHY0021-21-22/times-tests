@@ -32,6 +32,6 @@ def test_given_input():
 - When you are happy with your solution (or want some feedback!):
     - Push your new code to your own fork.
     - On GitHub, open a pull request from your fork to the original repository.
-    - In the description, include the text "Answers UCL-MPHY0021-21-22/RSE-Classwork#16". This will link your PR to this issue.
+    - In the description, include the text "Answers UCL-MPHY0021-21-22/RSE-Classwork#16". This will list your PR to this issue.
     - On the PR text, comment on what you found difficult or interesting, or something you learned.
 - Continue with the remaining steps (7. - 9.) on [Classwork issue #16](https://github.com/UCL-MPHY0021-21-22/RSE-Classwork/issues/16)
