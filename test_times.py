@@ -8,3 +8,7 @@ def test_given_input():
     short = time_range("2010-01-12 10:30:00", "2010-01-12 10:45:00", 2, 60)
     print(compute_overlap_time(large, short))
 
+        result = ... 
+    expected = ...
+    assert result == expected
+
