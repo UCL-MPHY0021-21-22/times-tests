@@ -1,5 +1,5 @@
-from .times import time_range
-from .times import compute_overlap_time
+from times import time_range
+from times import compute_overlap_time
 
 
 def test_given_input():
