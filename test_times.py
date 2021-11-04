@@ -46,6 +46,6 @@ def test_back_to_back():
 
 def test_negative():
 
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError, match = "Invalid time range, end time is before start time"): 
             second = time_range( "2010-01-12 14:00:00", "2010-01-12 12:00:00")
             
