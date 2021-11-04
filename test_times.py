@@ -13,10 +13,10 @@ def test_backwards_range():
     with pytest.raises(ValueError,Match='m'):
         time_range("2010-01-12 12:00:00", "2010-01-12 10:00:00")
 
-def test_dont_overlap():
-    large2 = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00")
-    short2 = time_range("2011-01-12 10:00:00", "2011-01-12 12:00:00")
-    result = compute_overlap_time(large2,short2)
-    expected = []
-    print(result)
-    assert (result == expected),'Overlap does not exist'
+#def test_dont_overlap():
+ #   large2 = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00")
+  #  short2 = time_range("2011-01-12 10:00:00", "2011-01-12 12:00:00")
+   # result = compute_overlap_time(large2,short2)
+    #expected = []
+    #print(result)
+    #assert (result == expected),'Overlap does not exist'
