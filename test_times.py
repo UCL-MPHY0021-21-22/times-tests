@@ -57,7 +57,7 @@ def test_similtaneous():
     assert result == expected
 
 def test_opposite_range():
-    with raises ValueError:
+    with raises(ValueError):
         time_range('2010-01-12 12:00:00', '2009-01-12 12:00:00')
     
 
