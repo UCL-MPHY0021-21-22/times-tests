@@ -23,7 +23,7 @@ def compute_overlap_time(range1, range2):
             low = max(start1, start2)
             high = min(end1, end2)
 
-            if high>low:
+            if high >=low :
                 overlap_time.append((low, high))
 
     return overlap_time
@@ -31,11 +31,11 @@ def compute_overlap_time(range1, range2):
 
 
         
-"""
 
-large = time_range("2010-01-12 10:45:00", "2010-01-12 10:30:00", 3, 60)
-short = time_range("2010-01-12 10:30:00", "2010-01-12 10:45:00", 2, 120)
 
-print(large)
-print(short)
-"""
+high = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00")
+low = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00")
+
+
+result = compute_overlap_time(high,low)
+print(result)
