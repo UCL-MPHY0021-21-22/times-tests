@@ -1,6 +1,7 @@
 # this file will run tests on the times.py file
 
 from times import compute_overlap_time, time_range
+import pytest
 
 def test_given_input():
     
@@ -22,13 +23,11 @@ def test_no_overlap():
     assert result == expected
 
 def test_time_backwards():
-    test1 = time_range("2010-01-12 12:00:00", "2010-01-12 10:00:00")
-    test2 = time_range("2010-01-12 11:00:00", "2010-01-12 10:30:00")
 
-    result = compute_overlap_time(test1, test2) 
-    expected = []
+    with pytest.raises(ValueError):
+        test1 = time_range("2010-01-12 12:00:00", "2010-01-12 10:00:00")
+        test2 = time_range("2010-01-12 11:00:00", "2010-01-12 10:30:00")
 
-    assert result == expected
 
 def test_multiple_intervals():
     large = time_range("2010-01-12 10:30:00", "2010-01-12 10:45:00", 3, 60)

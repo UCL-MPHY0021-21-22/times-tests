@@ -31,9 +31,11 @@ def compute_overlap_time(range1, range2):
 
 
         
+"""
 
 large = time_range("2010-01-12 10:45:00", "2010-01-12 10:30:00", 3, 60)
 short = time_range("2010-01-12 10:30:00", "2010-01-12 10:45:00", 2, 120)
 
 print(large)
 print(short)
+"""
