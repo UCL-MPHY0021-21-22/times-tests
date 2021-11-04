@@ -1,4 +1,5 @@
 from times import time_range, compute_overlap_time
+from pytest import raises
 
 def test_given_input():
     
@@ -47,7 +48,7 @@ def test_several_intervals():
     
     assert result == expected   
     
-def similtaneous():
+def test_similtaneous():
     
     large = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00")
     short = time_range("2010-01-12 12:00:00", "2010-01-12 13:45:00", 2, 60)
@@ -57,3 +58,47 @@ def similtaneous():
     expected = [('2010-01-12 12:00:00', '2010-01-12 12:00:00')]
     
     assert result == expected
+        
+with raises(ValueError)
+    time_range('2010-01-12 12:00:00', '2009-01-12 12:00:00')
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
