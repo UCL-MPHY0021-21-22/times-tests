@@ -19,8 +19,3 @@ def compute_overlap_time(range1, range2):
             if low < high: # important, otherwise the tests doesnt pass & time1 should always be < than time2!
                 overlap_time.append((low, high))
     return overlap_time
-
-large = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00", 2, 60)
-short = time_range("2010-01-12 10:30:00", "2010-01-12 10:45:00", 2, 60)
-
-print(compute_overlap_time(large, short))
