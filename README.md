@@ -35,3 +35,13 @@ def test_given_input():
     - In the description, include the text "Answers UCL-MPHY0021-21-22/RSE-Classwork#16". This will link your PR to this issue.
     - On the PR text, comment on what you found difficult or interesting, or something you learned.
 - Continue with the remaining steps (7. - 9.) on [Classwork issue #16](https://github.com/UCL-MPHY0021-21-22/RSE-Classwork/issues/16)
+
+## GROUP EXXERCISE - WORKSHOP WEEK 5!!!
+
+Create 3 further tests
+create a test each in test_times.py for:
+two time ranges that do not overlap
+two time ranges that both contain several intervals each
+two time ranges that end exactly at the same time when the other starts
+run pytest and see whether all tests are picked up by pytest and whether they pass.
+fix any bugs in times.py the tests may have helped you find.
