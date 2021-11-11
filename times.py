@@ -22,5 +22,3 @@ def compute_overlap_time(range1, range2):
             if low < high: # important, otherwise the tests doesnt pass & time1 should always be < than time2!
                 overlap_time.append((low, high))
     return overlap_time
-
-
